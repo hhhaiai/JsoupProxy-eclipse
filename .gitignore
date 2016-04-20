@@ -1,0 +1,20 @@
+# built application files
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+.settings/
+
+# Intellij project files
+*.iml
+*.ipr
+*.iws
+*.idea/
+
+# mac 
+*.DS_Store
