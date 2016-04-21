@@ -21,7 +21,8 @@ public class GetNativeAddr {
 
     private static void getAddr() {
         try {
-            Document doc = Jsoup.connect("http://1212.ip138.com/ic.asp")
+            Document doc = Jsoup.connect("http://1212.ip138.com/ic.asp").header("Accept-Language", "zh-CN,zh;q=0.8")
+                    .header("Accept-Encoding", "gzip, deflate, sdch")
                     .userAgent(
                             "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36")
                     .timeout(3 * 1000).ignoreContentType(true).ignoreHttpErrors(true).get();
